@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Platzi Video</title>
+    <style>
+   /* principal */
+    .cuerpo
+    {
+        display: grid;
+        grid-template: 360px 150px 670px / 250px 530px 530px ;
+        
+        height: 100vh;
+        grid-template-areas:  "lista video video"
+                              "lista descri descri"
+                              "lista comentario comentario"
+    }
+    .lista
+    {
+        grid-area: lista;
+        background:#00006d ;
+        padding: 5px;
+    }
+    .video
+    {
+        grid-area: video;
+        background:black;
+    }
+    video
+    {
+     width: 100%;
+    }
+    .comentario
+    {
+        grid-area:comentario;
+        background: white;
+        padding: 5px;
+    }
+    .descri
+    {
+        grid-area:descri;
+        background: white;
+        padding: 5px;      
+    }
+    /* fin de principal */
+    /* lista */
+    .lista1
+    {
+        display: grid;
+        grid-template-rows: 100px 700px 370px;
+        color:white;
+    }
+    .uno
+    {
+        background: #00006d;
+        padding: 5px;
+        border: 2px solid #00006d;
+    }
+    .dos
+    {
+        background: #00006d;
+        padding: 5px;
+        border: 2px solid #00006d;
+    }
+    .tres
+    {
+        background: #00006d;
+        padding: 5px;
+        border: 2px solid #00006d;
+        text-align: center;
+    }
+    h1
+    {
+        color:white;
+        text-align: center;
+    }
+    strong
+    {
+        color: red;
+    }
+    /* fin de lista */
+   /* descri */
+   .des
+    {
+        display: white;
+        grid-template-rows: 40px 40px ;
+        /* justify-content:center; */
+    }
+    .des1
+    {
+        background: white;
+        padding: 5px;
+        /* border: 1px solid blue; */
+    }
+    .des2
+    {
+        background: white;
+        padding: 5px;
+        /* border: 1px solid blue; */
+    }
+    
+   /* descri fin */
+   /* comentario */
+   .comen
+    {
+        display: grid;
+        grid-template-columns: 700px 350px ;
+        grid-template-rows: 650px 650px;
+    }
+    .comen1
+    {
+        background:white;
+        padding: 5px;
+    }
+    .comen2
+    {
+        background: white;
+        padding: 5px;
+    }
+   /* comentario fin */
+   /* input */
+   input
+    {
+        color: white;
+        background-color:red;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius: 5px;
+        border: 1px solid red;
+        padding: 0 4px 0 4px;
+    }
+    .lp
+    {
+        display: grid;
+        grid-template-columns: 270px 140px 140px 140px 140px 140px;
+        grid-gap: 10px;
+        margin: 0%;
+    }
+    .l
+    {
+        background-color: white;
+        padding: 5px;
+    }
+    .l1
+    {
+        background: white;
+        padding: 5px;
+    }
+    .l2
+    {
+        background: white;
+        padding: 5px;
+    }
+    .l3
+    {
+        background: white;
+        padding: 5px;
+    }
+    .l4
+    {
+        background: white;
+        padding: 5px;
+    }
+    .l5
+    {
+        background: white;
+        padding: 5px;
+    }
+    ::placeholder
+    {
+        color: white;
+    }
+   /* fin de input */
+   h6
+   {
+   color: #aba5a5;
+   top: 0%;
+   }
+   p
+   {
+   color:black;
+   }
+
+
+   .imagen
+    {
+        display: grid;
+        grid-template-rows: 300px  300px;
+        grid-gap: 20px;
+        justify-content: center;
+        text-align: center;
+        color:black;
+    }
+    .imagen1
+    {
+        background:white;
+        padding: 5px;
+    }
+    .imagen2
+    {
+        background: white;
+        padding: 5px;
+    }
+
+    </style>
+</head>
+<body>
+    <section class="cuerpo">
+
+     <div class="lista">
+       <div class="lista1">
+            <div class="uno">
+                <h1>Platzi <strong>Video</strong></h1>
+            </div>
+            <div class="dos">
+                    <h3>My Playlist</h3>
+                <ol>
+                    <li>5 Reasons to chooce A Notebook Over A Computer desktop</li> <br>
+                    <li>Get Around Easily White A New York Limousine Service</li> <br>
+                    <li>How to Cook A Tender Juicy Steak</li> <br>
+                    <li>How To Remove kidney Stones</li> <br>
+                    <li>The Science Of Superstitions</li> <br>
+                    <li>5 Reasons To Choose A Notebook Over A Computer Dasktop</li> <br>
+                    <li>Get Around Easily With York Limousine Service</li> <br>
+                    <li>How to Cook A Tender Juicy Steak</li> <br>
+                    <li>How To Remove kidney Stones</li> <br>
+                    <li>The Science Of Superstitions</li>
+                </ol>
+            </div>
+            <div class="tres">
+              <h3>Playlist de Amigos</h3>
+              <img src="images/2.png" alt="">
+            </div>
+       </div>
+     </div>
+
+     <div class="video">
+         <video src="video/video.mp4" poster="images/1.png" controls width="360px" height="300px"></video>
+    </div>
+
+     <div class="descri"> 
+        <div class="des">
+                <div class="des1">
+                    <p>Harry Potter</p>
+                     <h6>124,886 vistas</h6>
+                </div>
+
+                <div class="des2">
+                    <div class="lp">
+                            <div class="l"> <input type="text"  size="30" placeholder="Agregar a mi lista"></div>
+                            <div class="l1">hola</div>
+                            <div class="l2"><input type="text" size="10" placeholder="Electronic"></div>
+                            <div class="l3"><input type="text" size="10" placeholder="Roc"></div>
+                            <div class="l4"><input type="text" size="10" placeholder="80"></div>
+                            <div class="l5"><input type="text" size="10" placeholder="Rela"></div>
+                    </div>
+                </div>
+        </div>
+     </div>
+
+     <div class="comentario">
+         <div class="comen">
+
+           <div class="comen1">
+             <input type="text" size="90" placeholder="Añade un comentario">
+             <img src="images/5.png" alt="">
+           </div>
+
+           <div class="comen2">
+              <div class="imagen">
+                    <div class="imagen1">
+                        <img src="images/3.png" alt="">
+                        <p>Quick And Easy Lunches For Ther Cooking Challenged</p>
+                    </div>
+                    <div class="imagen2">
+                        <img src="images/4.png" alt="">
+                        <p>Quick And Easy Lunches For Ther Cooking Challenged</p>
+                        </div>
+              </div>
+           </div>
+
+         </div>
+     </div>
+    </section>
+</body>
+</html>
